@@ -1,26 +1,20 @@
 awesome_wm_config
 =================
 
-my awesome config, working on fedora 17
+my awesome config, working on fedora 20
 
-programs i used in the config:
-geany
+first clone this repository into your .config/ dir:
 
-filezilla
+    git clone https://github.com/jaeh/awesome-config ~/.config/awesome/
 
-skype && pidgin
+copy files into the right dirs and initiate git submodules:
 
-lxterminal
+    cp ~/.config/awesome/themes/font/PIXELADE.TTF ~/.fonts/ && \
+    fc-cache && \
+    chmod +x ~/.config/awesome/run_once.sh && \
+    git submodule init && git submodule update
 
-gimp
+command + ctrl + r to reload awesome.
 
-after download:
-
-copy files into ~/.config/awesome/
-
-copy ~/.config/awesome/themes/font/PIXELADE.ttf to ~/.fonts/ and reload your font cache (fc-cache)
-
-make ~/.config/awesome/run_once.sh executable
-
-
--- hopefully enjoy.
+you will need to adjust some settings of the widgets,
+those will one day be moved into a separate config file.
